@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Engaging Reader Help Page Project</title>
+  <style>
+    :root {
+      --green-dark: #2e6f40;
+      --green-mid: #95d3a6;
+      --green-light: #e5eae5;
+      --green-bg: #e3f0e5;
+      --blue: #3a7ec6;
+      --text: #1a1a1a;
+      --card: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Atkinson Hyperlegible", Arial, sans-serif;
+      background: var(--green-light);
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    .page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 32px 20px 56px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--green-bg), #ffffff);
+      border: 2px solid var(--green-dark);
+      border-radius: 24px;
+      padding: 32px;
+      margin-bottom: 28px;
+    }
+
+    .eyebrow {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--green-dark);
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3.6rem);
+      line-height: 1.1;
+      margin: 0 0 14px;
+    }
+
+    .summary {
+      max-width: 760px;
+      font-size: 1.08rem;
+      margin: 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1.5px solid rgba(46, 111, 64, 0.22);
+      border-radius: 20px;
+      padding: 22px;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 1.35rem;
+      color: var(--green-dark);
+    }
+
+    .process {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 12px;
+    }
+
+    .step {
+      background: white;
+      border: 1.5px solid rgba(46, 111, 64, 0.2);
+      border-radius: 16px;
+      padding: 16px;
+    }
+
+    .step-number {
+      display: inline-flex;
+      width: 32px;
+      height: 32px;
+      border-radius: 999px;
+      background: var(--green-dark);
+      color: white;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .caption {
+      font-size: 0.96rem;
+      color: #2f3b33;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin: 10px 0 0;
+    }
+
+    .project-image {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 16px;
+      border: 2px solid rgba(46, 111, 64, 0.2);
+    }
+
+    @media (max-width: 800px) {
+      .grid, .process {
+        grid-template-columns: 1fr;
+      }
+
+      .hero, .card {
+        padding: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div class="eyebrow">Inclusive &amp; Accessible Design Studio</div>
+      <h1>Engaging Reader Help Page</h1>
+      <p class="summary">
+        This project focused on designing a help page for Engaging Reader, a platform that supports clearer and more accessible document reading. Through user testing, interface comparison, and iteration, we developed a help experience that uses focused task sections, simple written instructions, and short demonstration videos. Our final design responds directly to feedback about clarity, clutter, and usability by making key features easier to find, understand, and use.
+      </p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Final Design Outcome</h2>
+        <img class="project-image" src="Website/Screenshot (1194).png" alt="Final Engaging Reader help page screenshot">
+        <p class="caption" style="margin-top:12px;">
+          Final HTML help page with feature-based navigation, instructional videos, and simplified written guidance.
+        </p>
+      </article>
+
+      <aside class="card">
+        <h2>Project Focus</h2>
+        <p>
+          The goal was to explain major features in a way that was accessible, clear, and easy to navigate for users with a wide range of needs.
+        </p>
+        <ul>
+          <li>User testing and comparison of two design directions</li>
+          <li>Iteration based on feedback about clutter and readability</li>
+          <li>HTML prototype supported by instructional videos</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="card">
+      <h2>Design Process</h2>
+      <div class="process">
+        <div class="step">
+          <div class="step-number">1</div>
+          <strong>Prototype A/B</strong>
+          <p class="caption">We created and compared two layout directions to test structure, hierarchy, and visibility.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <strong>User Feedback</strong>
+          <p class="caption">Users liked visible information, but found some versions too small or cluttered.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <strong>Final Iteration</strong>
+          <p class="caption">We refined the page into clearer feature sections with improved instructions and video guidance.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
